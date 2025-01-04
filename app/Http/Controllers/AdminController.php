@@ -8,6 +8,7 @@ use App\Models\Product;
 
 use App\Models\Category;
 use App\Models\Order;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 
 
@@ -139,6 +140,9 @@ public function delivered($id){
 }
 
 public function print_pdf($id){
-    
+  
+  $data=Order::find($id);
+    $pdf=Pdf::loadView('admin.invoice',compact('data'));
+    return $pdf->download('invoice.pdf');
 }
 }
