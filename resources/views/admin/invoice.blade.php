@@ -12,7 +12,7 @@
             <h3>phone: {{$data->phone}}</h3>
             <h2>Product title: {{$data->product->title}}</h2>
             <h2>Product Price: {{$data->product->price}}</h2>
-            <img height="250" width="300" src="{{ asset('public/products/' . $data->product->image ) }}" alt="Product Image">
+            <img height="250" width="300" src="products/{{$data->product->image}}">
 
         </center>
     </body>
