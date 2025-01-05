@@ -6,10 +6,11 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use App\Models\Cart;
 use App\Models\Order;
 use Stripe;
-use Session;
+
 
 class HomeController extends Controller
 {
@@ -183,5 +184,59 @@ foreach($cart_remove as $remove){
 toastr()->timeOut(10000)->closeButton()->addSuccess('Order Placed Successfully');
 return redirect('mycart');
 }
+public function shop(){
+    $product=Product::all();
+    if(Auth::id()){
+    $user=Auth::user();
+    $userid=$user->id;
+    $count=Cart::where('user_id',$userid)->count();
+    }
+    else{
+        $count='';
+    }
+
+    return view('home.shop',compact('product','count'));
+}
+public function why(){
+  
+    if(Auth::id()){
+    $user=Auth::user();
+    $userid=$user->id;
+    $count=Cart::where('user_id',$userid)->count();
+    }
+    else{
+        $count='';
+    }
+
+    return view('home.why',compact('count'));
+}
+public function testimonial(){
+  
+    if(Auth::id()){
+    $user=Auth::user();
+    $userid=$user->id;
+    $count=Cart::where('user_id',$userid)->count();
+    }
+    else{
+        $count='';
+    }
+
+    return view('home.testimonial',compact('count'));
+}
+public function contacts(){
+  
+    if(Auth::id()){
+    $user=Auth::user();
+    $userid=$user->id;
+    $count=Cart::where('user_id',$userid)->count();
+    }
+    else{
+        $count='';
+    }
+
+    return view('home.contacts',compact('count'));
+}
+
+
 
 }
