@@ -38,18 +38,19 @@
     
     <div class="container vh-100 d-flex justify-content-center align-items-center">
       <div class="col-md-6 col-lg-5 px-0">
-        <form action="#">
+        <form action="{{url('review')}}" method="POST">
+          @csrf
           <div>
-            <input type="text" placeholder="Name" class="form-control mb-3" />
+            <input type="text" placeholder="Name" class="form-control mb-3" name="name" />
           </div>
           <div>
-            <input type="email" placeholder="Email" class="form-control mb-3" />
+            <input type="email" placeholder="Email" class="form-control mb-3" name="email"/>
           </div>
           <div>
-            <input type="text" placeholder="Phone" class="form-control mb-3" />
+            <input type="text" placeholder="Phone" class="form-control mb-3" name="phone" />
           </div>
           <div>
-            <textarea placeholder="Message" class="form-control mb-3"></textarea>
+            <textarea placeholder="Message" class="form-control mb-3" name="message" ></textarea>
           </div>
           <div class="d-flex">
             <button type="submit" class="btn btn-primary w-100">

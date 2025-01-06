@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\reviews;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\User;
@@ -237,6 +238,15 @@ public function contacts(){
 
     return view('home.contacts',compact('count'));
 }
-
+public function review(Request $request){
+    $data= new reviews();
+    $data->name=$request->name;
+    $data->email=$request->email;
+    $data->phone=$request->phone;
+    $data->message=$request->message;
+    $data->save();
+    toastr()->timeOut(10000)->closeButton()->addSuccess('Review Sended Successfully');
+    return redirect()->back();
+}
 
 }

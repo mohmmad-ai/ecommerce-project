@@ -53,7 +53,7 @@ Route::controller(HomeController::class)->group(function(){
     Route::get('/map', function () {
         return view('map');
     });
-    
+    route::post('review',[HomeController::class,'review'])->middleware(['auth','verified']);  
 
 
     
