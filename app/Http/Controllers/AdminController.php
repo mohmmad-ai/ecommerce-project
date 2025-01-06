@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\reviews;
 use Illuminate\Http\Request;
 
 use App\Models\Product;
@@ -144,5 +145,10 @@ public function print_pdf($id){
   $data=Order::find($id);
     $pdf=Pdf::loadView('admin.invoice',compact('data'));
     return $pdf->download('invoice.pdf');
+}
+public function reviews(){
+    $data=reviews::all();
+    
+    return view('admin.reviews',compact('data'));
 }
 }

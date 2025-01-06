@@ -21,6 +21,7 @@
                 </ul>
               </li>
               <li><a href="{{url('view_order')}}"> <i class="icon-grid"></i>Orders</a></li>
+              <li><a href="{{url('reviews')}}"> <i></i>Reviews</a></li>
       </ul>
               
     </nav>
