@@ -30,9 +30,13 @@
   <section class="contact_section">
     <div class="container px-0">
       <div class="heading_container ">
+      
+        <br>
+        <br>
         <h2 class="">
           Contact Us
         </h2>
+        
       </div>
     </div>
     
