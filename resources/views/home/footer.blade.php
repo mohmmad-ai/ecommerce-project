@@ -1,20 +1,5 @@
 <section class="info_section  layout_padding2-top">
-    <div class="social_container">
-      <div class="social_box">
-        <a href="">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a href="">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a href="">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
-        <a href="">
-          <i class="fa fa-youtube" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
+  
     <div class="info_container ">
       <div class="container">
         <div class="row">
@@ -23,46 +8,34 @@
               ABOUT US
             </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+              At Gifto, we offer a wide range of quality products at great prices. Our mission is to provide a simple, enjoyable shopping experience with fast shipping and excellent service. Thank you for choosing us!
             </p>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="info_form ">
-              <h5>
-                Newsletter
-              </h5>
-              <form action="#">
-                <input type="email" placeholder="Enter your email">
-                <button>
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
+         
+          <div class="col-md-6 col-lg-3 container">
             <h6>
               NEED HELP
             </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+              Need assistance? We're here to help! Whether you have questions about your order, our products, or our website, we’ve got you covered, contact us
             </p>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3" style="padding:0.7%;">
             <h6>
               CONTACT US
             </h6>
             <div class="info_link-box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span> Gb road 123 london Uk </span>
+                <span> Beirut Hadath </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>+01 12345678901</span>
+                <span>+961 76660619</span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span> demo@gmail.com</span>
+                <span> mohammad.awala@yahoo.com</span>
               </a>
             </div>
           </div>
@@ -73,8 +46,7 @@
     <footer class=" footer_section">
       <div class="container">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Web Tech Knowledge</a>
+          &copy; <span id="displayYear"></span> All Rights Reserved </a>
         </p>
       </div>
     </footer>
