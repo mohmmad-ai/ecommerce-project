@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Models\Cart;
 use App\Models\Order;
+
 use Stripe;
 
 
@@ -236,7 +237,6 @@ public function contacts(){
 
     return view('home.contacts',compact('count'));
 }
-
 
 
 }

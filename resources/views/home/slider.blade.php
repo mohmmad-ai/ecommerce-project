@@ -12,11 +12,9 @@
                       Gift Shop
                     </h1>
                     <p>
-                      Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
+                      Explore a wide range of unique gifts, stylish accessories, premium products, and everyday essentials—all in one place!
                     </p>
-                    <a href="">
-                      Contact Us
-                    </a>
+                    
                   </div>
                 </div>
                 <div class="col-md-5 ">
